@@ -1,0 +1,173 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Outfit', sans-serif;
+    color: #1a2e3b;
+    background-color: #fffbf9; /* Fondo crema suave, toque empático y femenino */
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+  }
+
+  body {
+    @apply overflow-x-hidden antialiased;
+  }
+}
+
+@layer components {
+  /* Botones Premium con Micro-animación */
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-semibold rounded-lg text-white bg-primary hover:bg-primary-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-[1.03] active:scale-95;
+  }
+
+  .btn-secondary {
+    @apply inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-semibold rounded-lg text-white bg-secondary hover:bg-secondary-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-secondary shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-[1.03] active:scale-95;
+  }
+
+  .btn-outline {
+    @apply inline-flex items-center justify-center px-6 py-3 border-2 border-primary text-base font-semibold rounded-lg text-primary hover:bg-primary-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary transition-all duration-300 transform hover:scale-[1.03] active:scale-95;
+  }
+
+  /* Tarjetas Orgánicas Elevadas */
+  .card {
+    @apply bg-white rounded-2xl border border-accent-blush/40 p-6 shadow-premium hover:shadow-premium-hover hover:-translate-y-2 transition-all duration-300 ease-out;
+  }
+
+  /* Glassmorphism con Aceleración GPU */
+  .glass {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    will-change: backdrop-filter;
+    @apply border border-white/40 shadow-sm;
+  }
+
+  .backdrop-blur-custom {
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    will-change: backdrop-filter;
+  }
+}
+
+@layer utilities {
+  /* Aceleración GPU para Animaciones GSAP / CSS */
+  .gpu-accelerated {
+    transform: translateZ(0);
+    will-change: transform, opacity;
+  }
+
+  /* Scroll optimizado para GPU */
+  .scroll-gpu {
+    will-change: scroll-position;
+  }
+
+  /* Text Wrap Balance para evitar saltos antiestéticos (Core Web Vitals) */
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  /* Content Visibility para retrasar coste de renderizado fuera de pantalla (PageSpeed) */
+  .content-visibility-auto {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 500px;
+  }
+
+  /* Ocultar barra de desplazamiento de forma limpia */
+  .scrollbar-none {
+    -ms-overflow-style: none;  /* IE y Edge */
+    scrollbar-width: none;  /* Firefox */
+  }
+  .scrollbar-none::-webkit-scrollbar {
+    display: none; /* Chrome, Safari y Opera */
+  }
+}
+
+/* Animaciones de Orbes Flotantes y Entrada GPU-Accelerated */
+@keyframes float-orb-1 {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  33% {
+    transform: translate3d(40px, -60px, 0) scale(1.1);
+  }
+  66% {
+    transform: translate3d(-30px, 30px, 0) scale(0.95);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+@keyframes float-orb-2 {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  50% {
+    transform: translate3d(-50px, 60px, 0) scale(1.08);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+@keyframes float-orb-3 {
+  0% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  33% {
+    transform: translate3d(-40px, -40px, 0) scale(0.9);
+  }
+  66% {
+    transform: translate3d(40px, 50px, 0) scale(1.12);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 20px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.animate-float-1 {
+  animation: float-orb-1 18s ease-in-out infinite;
+}
+
+.animate-float-2 {
+  animation: float-orb-2 22s ease-in-out infinite;
+}
+
+.animate-float-3 {
+  animation: float-orb-3 20s ease-in-out infinite;
+}
+
+.animate-fade-in-up {
+  opacity: 0;
+  animation: fade-in-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Fallback de Accesibilidad: reduce el consumo y desactiva animaciones si el usuario lo prefiere */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-delay: -1ms !important;
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    background-attachment: initial !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0s !important;
+    transition-delay: 0s !important;
+  }
+}
