@@ -17,7 +17,7 @@
             </div>
             
             <h1 id="inicio-titulo" class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold text-slate-900 leading-tight text-balance animate-fade-in-up" style="animation-delay: 150ms;">
-              Atención médica de confianza para un <strong class="bg-gradient-to-r from-primary-700 via-primary to-primary-500 bg-clip-text text-transparent font-bold box-decoration-clone animate-text-flow">envejecimiento pleno</strong>
+              Atención médica de confianza para un <strong class="font-bold box-decoration-clone animate-text-flow">envejecimiento pleno</strong>
             </h1>
             
             <p class="text-lg text-slate-600 leading-relaxed max-w-2xl font-sans animate-fade-in-up" style="animation-delay: 250ms;">
@@ -122,7 +122,7 @@
               <span>Cuidado y Calidez Médica</span>
             </div>
             <h2 class="text-3xl sm:text-4xl font-display font-bold text-slate-900 leading-tight">
-              Dedicada por entero al <strong class="bg-gradient-to-r from-primary-700 via-primary to-primary-500 bg-clip-text text-transparent font-bold box-decoration-clone animate-text-blur">bienestar de las personas mayores</strong>
+              Dedicada por entero al <strong class="font-bold box-decoration-clone animate-text-glint-primary">bienestar de las personas mayores</strong>
             </h2>
             <p class="text-base text-slate-600 leading-relaxed font-sans">
               Como médico geriatra, entiendo que la salud en el adulto mayor requiere de un enfoque multidimensional y personalizado. No se trata únicamente de tratar enfermedades, sino de <strong>preservar la funcionalidad, la lucidez mental y la independencia</strong> del paciente.
