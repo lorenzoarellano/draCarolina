@@ -17,7 +17,7 @@
             </div>
             
             <h1 id="inicio-titulo" class="text-4xl sm:text-5xl lg:text-6xl font-display font-bold text-slate-900 leading-tight text-balance animate-fade-in-up" style="animation-delay: 150ms;">
-              Atención médica de confianza para un <strong class="bg-gradient-to-r from-primary-700 via-primary to-primary-500 bg-clip-text text-transparent font-bold box-decoration-clone">envejecimiento pleno</strong>
+              Atención médica de confianza para un <strong class="bg-gradient-to-r from-primary-700 via-primary to-primary-500 bg-clip-text text-transparent font-bold box-decoration-clone animate-text-flow">envejecimiento pleno</strong>
             </h1>
             
             <p class="text-lg text-slate-600 leading-relaxed max-w-2xl font-sans animate-fade-in-up" style="animation-delay: 250ms;">
@@ -122,7 +122,7 @@
               <span>Cuidado y Calidez Médica</span>
             </div>
             <h2 class="text-3xl sm:text-4xl font-display font-bold text-slate-900 leading-tight">
-              Dedicada por entero al <strong class="bg-gradient-to-r from-primary-700 via-primary to-primary-500 bg-clip-text text-transparent font-bold box-decoration-clone">bienestar de las personas mayores</strong>
+              Dedicada por entero al <strong class="bg-gradient-to-r from-primary-700 via-primary to-primary-500 bg-clip-text text-transparent font-bold box-decoration-clone animate-text-blur">bienestar de las personas mayores</strong>
             </h2>
             <p class="text-base text-slate-600 leading-relaxed font-sans">
               Como médico geriatra, entiendo que la salud en el adulto mayor requiere de un enfoque multidimensional y personalizado. No se trata únicamente de tratar enfermedades, sino de <strong>preservar la funcionalidad, la lucidez mental y la independencia</strong> del paciente.
@@ -177,7 +177,7 @@
             <span>Servicios Especializados</span>
           </div>
           <h2 class="text-3xl sm:text-4xl font-display font-bold text-slate-900">
-            Especialidades Geriátricas que <strong class="bg-gradient-to-r from-secondary-600 via-secondary to-secondary-400 bg-clip-text text-transparent font-bold box-decoration-clone">marcan la diferencia</strong>
+            Especialidades Geriátricas que <strong class="animate-text-glint-secondary font-bold box-decoration-clone">marcan la diferencia</strong>
           </h2>
           <p class="text-slate-600 font-sans text-base">
             Cada tratamiento y valoración está diseñado para atender las condiciones físicas y cognitivas específicas que se presentan en la vejez de forma preventiva e integral.
@@ -222,7 +222,7 @@
             <span>Experiencias Reales</span>
           </div>
           <h2 class="text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-slate-900 leading-tight">
-            La voz de las familias que <strong class="bg-gradient-to-r from-primary-700 via-primary to-primary-500 bg-clip-text text-transparent font-bold box-decoration-clone">confían en nosotros</strong>
+            La voz de las familias que <strong class="bg-gradient-to-r from-primary-700 via-primary to-primary-500 bg-clip-text text-transparent font-bold box-decoration-clone animate-text-reveal">confían en nosotros</strong>
           </h2>
           <p class="text-slate-600 font-sans text-base max-w-2xl mx-auto">
             Hacé clic en los perfiles de abajo para leer las historias completas sobre la calidez y el cuidado médico de la Dra. Harsanyi.
@@ -398,7 +398,7 @@
             </div>
             
             <h2 class="text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-slate-900 leading-tight text-balance">
-              Preguntas Frecuentes sobre <strong class="bg-gradient-to-r from-secondary-600 via-secondary to-secondary-400 bg-clip-text text-transparent font-bold box-decoration-clone">Geriatría</strong>
+              Preguntas Frecuentes sobre <strong class="bg-gradient-to-r from-secondary-600 via-secondary to-secondary-400 bg-clip-text text-transparent font-bold box-decoration-clone animate-text-hue">Geriatría</strong>
             </h2>
             
             <p class="text-slate-600 font-sans text-base leading-relaxed">
@@ -478,7 +478,7 @@
             <span>Ubicación y Atención</span>
           </div>
           <h2 class="text-3xl sm:text-4xl font-display font-bold text-slate-900">
-            Agenda tu cita en <strong class="bg-gradient-to-r from-primary-700 via-primary to-primary-500 bg-clip-text text-transparent font-bold box-decoration-clone">Delicias, Chihuahua</strong>
+            Agenda tu cita en <strong class="bg-gradient-to-r from-primary-700 via-primary to-primary-500 bg-clip-text text-transparent font-bold box-decoration-clone animate-text-pulse">Delicias, Chihuahua</strong>
           </h2>
           <p class="text-slate-600 font-sans text-base">
             Consultorio médico equipado y accesible para adultos mayores. Te acompañamos en tu proceso de salud.
