@@ -178,6 +178,7 @@
   background-size: 200% auto;
   -webkit-background-clip: text;
   background-clip: text;
+  color: transparent;
   animation: text-flow 3s linear infinite;
 }
 
@@ -186,6 +187,7 @@
   background-size: 200% auto;
   -webkit-background-clip: text;
   background-clip: text;
+  color: transparent;
   animation: text-glint 6s linear infinite;
 }
 
@@ -194,6 +196,7 @@
   background-size: 200% auto;
   -webkit-background-clip: text;
   background-clip: text;
+  color: transparent;
   animation: text-glint 5s linear infinite;
 }
 
