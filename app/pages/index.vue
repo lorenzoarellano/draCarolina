@@ -232,7 +232,7 @@
           </div>
           <h2 class="text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-slate-900 leading-tight">
             La voz de las familias que 
-            <span class="dropping-texts-container w-[9.2em]">
+            <span class="dropping-texts-container w-[12em]">
               <strong class="dropping-text-item bg-gradient-to-r from-primary-700 via-primary to-primary-500 bg-clip-text text-transparent font-bold box-decoration-clone">confían en nosotros</strong>
               <strong class="dropping-text-item bg-gradient-to-r from-primary-700 via-primary to-primary-500 bg-clip-text text-transparent font-bold box-decoration-clone">viven con tranquilidad</strong>
               <strong class="dropping-text-item bg-gradient-to-r from-primary-700 via-primary to-primary-500 bg-clip-text text-transparent font-bold box-decoration-clone">sienten el cuidado</strong>
