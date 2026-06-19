@@ -178,7 +178,7 @@
           </div>
           <h2 class="text-3xl sm:text-4xl font-display font-bold text-slate-900 flex flex-wrap items-center justify-center gap-x-2 gap-y-3">
             <span>Especialidades Geriátricas que</span>
-            <strong class="aurora-title-container font-bold px-4 py-1.5 rounded-xl text-white bg-[#10283f] relative overflow-hidden inline-flex items-center justify-center min-h-[2.5rem] shadow-sm">
+            <strong class="aurora-title-container font-bold px-4 py-1.5 rounded-xl relative overflow-hidden inline-flex items-center justify-center min-h-[2.5rem] shadow-sm">
               <span class="aurora-text-content">marcan la diferencia</span>
               <span class="aurora-glow-container">
                 <span class="aurora-glow-item"></span>
