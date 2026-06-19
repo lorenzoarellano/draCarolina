@@ -413,7 +413,7 @@
             </div>
             
             <h2 class="text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-slate-900 leading-tight text-balance">
-              Preguntas Frecuentes sobre <strong class="bg-gradient-to-r from-secondary-600 via-secondary to-secondary-400 bg-clip-text text-transparent font-bold box-decoration-clone animate-text-hue">Geriatría</strong>
+              Preguntas Frecuentes sobre <strong class="font-bold box-decoration-clone animate-text-flow">Geriatría</strong>
             </h2>
             
             <p class="text-slate-600 font-sans text-base leading-relaxed">
