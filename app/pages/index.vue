@@ -231,7 +231,13 @@
             <span>Experiencias Reales</span>
           </div>
           <h2 class="text-3xl sm:text-4xl lg:text-5xl font-display font-bold text-slate-900 leading-tight">
-            La voz de las familias que <strong class="bg-gradient-to-r from-primary-700 via-primary to-primary-500 bg-clip-text text-transparent font-bold box-decoration-clone animate-text-reveal">confían en nosotros</strong>
+            La voz de las familias que 
+            <span class="dropping-texts-container w-[9.2em]">
+              <strong class="dropping-text-item bg-gradient-to-r from-primary-700 via-primary to-primary-500 bg-clip-text text-transparent font-bold box-decoration-clone">confían en nosotros</strong>
+              <strong class="dropping-text-item bg-gradient-to-r from-primary-700 via-primary to-primary-500 bg-clip-text text-transparent font-bold box-decoration-clone">viven con tranquilidad</strong>
+              <strong class="dropping-text-item bg-gradient-to-r from-primary-700 via-primary to-primary-500 bg-clip-text text-transparent font-bold box-decoration-clone">sienten el cuidado</strong>
+              <strong class="dropping-text-item bg-gradient-to-r from-primary-700 via-primary to-primary-500 bg-clip-text text-transparent font-bold box-decoration-clone">encuentran bienestar</strong>
+            </span>
           </h2>
           <p class="text-slate-600 font-sans text-base max-w-2xl mx-auto">
             Hacé clic en los perfiles de abajo para leer las historias completas sobre la calidez y el cuidado médico de la Dra. Harsanyi.
