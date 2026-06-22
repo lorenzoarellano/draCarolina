@@ -10,7 +10,7 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <!-- Textos del Hero -->
-          <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          <div class="lg:col-span-6 space-y-6 text-center lg:text-left">
             <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-primary-50 border border-primary-100 animate-fade-in-up" style="animation-delay: 50ms;">
               <Award class="w-4 h-4 text-primary" />
               <span class="text-xs font-semibold text-primary uppercase tracking-wider">Especialista Certificada en Adultos Mayores</span>
@@ -25,8 +25,13 @@
             </p>
             
             <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 animate-fade-in-up" style="animation-delay: 350ms;">
-              <a href="#contacto" class="btn-secondary w-full sm:w-auto gap-2">
-                <Calendar class="w-5 h-5 text-white" />
+              <a 
+                href="https://wa.me/526394651430?text=Hola%20Dra.%20Harsanyi,%20me%20gustar%C3%ADa%20agendar%20una%20consulta"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-secondary w-full sm:w-auto gap-2"
+              >
+                <WhatsAppIcon class="w-5 h-5 text-white" />
                 <span>Agendar Consulta</span>
               </a>
               <a href="#servicios" class="btn-outline w-full sm:w-auto bg-white/50 backdrop-blur-sm">
@@ -45,36 +50,60 @@
                 <div class="text-xs text-slate-500 font-semibold">Opiniones de Pacientes</div>
               </div>
               <div class="text-center lg:text-left">
-                <div class="text-2xl font-bold text-primary">Delicias</div>
+                <div class="text-2xl font-bold text-primary">Delicias Chihuahua </div>
                 <div class="text-xs text-slate-500 font-semibold">Ubicación Local</div>
               </div>
             </div>
           </div>
-          
-          <!-- Imagen del Hero (Espacio reservado con Estilo Premium) -->
-          <div class="lg:col-span-5 flex justify-center animate-fade-in-up" style="animation-delay: 300ms;">
-            <div class="relative w-full max-w-md aspect-[4/5] rounded-[2.5rem] overflow-hidden shadow-2xl border-4 border-white bg-gradient-to-br from-primary-200 to-accent-blush flex items-center justify-center group">
-              <!-- Overlay degradado femenino -->
-              <div class="absolute inset-0 bg-gradient-to-t from-primary-950/40 via-transparent to-transparent opacity-80 z-10"></div>
+
+          <!-- Imagen del Hero (Silueta de la Doctora en PNG sin fondo) -->
+          <div class="lg:col-span-6 flex justify-center items-end animate-fade-in-up" style="animation-delay: 300ms;">
+            <div class="relative w-full max-w-[340px] sm:max-w-[420px] md:max-w-[480px] lg:max-w-[620px] xl:max-w-[680px] flex items-end justify-center group animate-float-portrait">
+              <!-- Glow decorativo sutil detrás de la silueta -->
+              <div class="absolute bottom-10 left-1/2 -translate-x-1/2 w-72 h-72 rounded-full bg-gradient-to-tr from-primary-200/50 to-accent-blush/40 blur-3xl -z-10 group-hover:scale-110 transition-transform duration-700"></div>
               
+              <!-- Logos flotantes decorativos con efecto de profundidad 3D -->
+              <!-- Logo 1: Arriba a la izquierda (detrás, ligeramente desenfocado) -->
+              <NuxtImg
+                src="/images/flotating-logo.webp"
+                alt="Logo decorativo"
+                class="absolute -top-6 -left-10 w-16 sm:w-20 h-auto opacity-40 blur-[1px] animate-float-slow -z-10 pointer-events-none"
+                format="webp"
+              />
+              
+              <!-- Logo 2: Arriba a la derecha (detrás, nítido y pequeño) -->
+              <NuxtImg
+                src="/images/flotating-logo.webp"
+                alt="Logo decorativo"
+                class="absolute top-16 -right-12 w-10 sm:w-12 h-auto opacity-50 animate-float-medium -z-10 pointer-events-none"
+                format="webp"
+              />
+              
+              <!-- Logo 3: Abajo a la izquierda (en primer plano, desenfoque de cámara) -->
+              <NuxtImg
+                src="/images/flotating-logo.webp"
+                alt="Logo decorativo"
+                class="absolute bottom-20 -left-16 w-20 sm:w-24 h-auto opacity-35 blur-[2.5px] animate-float-fast z-20 pointer-events-none"
+                format="webp"
+              />
+              
+              <!-- Logo 4: Centro a la derecha (detrás, tamaño mediano) -->
+              <NuxtImg
+                src="/images/flotating-logo.webp"
+                alt="Logo decorativo"
+                class="absolute bottom-40 -right-12 w-12 sm:w-16 h-auto opacity-45 blur-[0.5px] animate-float-slow -z-10 pointer-events-none"
+                format="webp"
+              />
+
               <!-- Imagen real con NuxtImg (con preload LCP) -->
               <NuxtImg
                 src="/images/dra-harsanyi-hero.png"
                 alt="Retrato Profesional Dra. Andrea Carolina Harsanyi"
-                class="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                sizes="sm:100vw md:50vw lg:400px"
+                class="w-full h-auto object-contain transition-transform duration-700 hover:scale-[1.03] relative z-10"
+                sizes="sm:100vw md:50vw lg:700px"
                 preload
                 format="webp"
-                placeholder
               />
-              
-              <!-- Placeholder visual en caso de que no exista la imagen físicamente en esta iteración -->
-              <div class="absolute inset-0 flex flex-col items-center justify-center text-primary-950 p-6 z-0 bg-gradient-to-br from-primary-50 to-accent-blush/60">
-                <Heart class="w-16 h-16 text-secondary-500 mb-4 animate-pulse" />
-                <span class="font-display font-bold text-lg text-center text-primary-900 leading-tight">Dra. Andrea Carolina Harsanyi</span>
-                <span class="text-sm text-slate-600 mt-1 uppercase tracking-widest font-semibold">Geriatra Certificada</span>
-                <span class="text-xs text-slate-400 mt-4 text-center italic">[Reemplazar con fotografía profesional en /public/images/dra-harsanyi-hero.png]</span>
-              </div>
             </div>
           </div>
         </div>
@@ -86,8 +115,8 @@
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <!-- Imagen Consultorio -->
-          <div class="order-2 lg:order-1 relative">
-            <div class="aspect-video sm:aspect-square max-w-lg mx-auto rounded-3xl overflow-hidden shadow-xl border border-slate-100 bg-gradient-to-br from-accent-warm to-accent-blush flex items-center justify-center">
+          <div class="order-2 lg:order-1 relative animate-fade-in-up" style="animation-delay: 150ms;">
+            <div class="aspect-video sm:aspect-square max-w-lg mx-auto rounded-3xl overflow-hidden">
               <!-- NuxtImg para consultorio -->
               <NuxtImg
                 src="/images/consultorio-delicias.png"
@@ -96,13 +125,7 @@
                 sizes="sm:100vw md:50vw"
                 format="webp"
                 loading="lazy"
-                placeholder
               />
-              <div class="absolute inset-0 flex flex-col items-center justify-center text-slate-500 p-6 text-center bg-slate-50/80 z-0">
-                <MapPin class="w-12 h-12 text-primary mb-3" />
-                <span class="font-semibold text-slate-800">[Espacio para Foto de Consultorio]</span>
-                <span class="text-xs text-slate-400 mt-2">/public/images/consultorio-delicias.png</span>
-              </div>
             </div>
             
             <!-- Tarjeta Flotante de Certificación -->
@@ -110,7 +133,7 @@
               <Award class="w-10 h-10 text-secondary-500 shrink-0" />
               <div>
                 <h4 class="font-display font-bold text-slate-800 text-xs uppercase tracking-wide">Médico Especialista</h4>
-                <p class="font-sans text-xs text-slate-600 mt-0.5">Certificada por el Consejo Mexicano de Geriatría</p>
+                <p class="font-sans text-xs text-slate-600 mt-0.5">Certificada por el Consejo Mexicano de Geriatría (Cédula: 14022827)</p>
               </div>
             </div>
           </div>
@@ -138,8 +161,8 @@
                   <Award class="w-5 h-5" />
                 </div>
                 <div>
-                  <h4 class="font-display font-bold text-slate-800 text-xs uppercase tracking-wider">Médico Egresada</h4>
-                  <p class="font-sans text-xs text-slate-500 mt-0.5">UNAM (Universidad Nacional Autónoma de México)</p>
+                  <h4 class="font-display font-bold text-slate-800 text-xs uppercase tracking-wider">Médico General</h4>
+                  <p class="font-sans text-xs text-slate-500 mt-0.5">UNAM (Cédula Profesional: 12064045)</p>
                 </div>
               </div>
               <div class="flex items-center gap-3">
@@ -148,7 +171,7 @@
                 </div>
                 <div>
                   <h4 class="font-display font-bold text-slate-800 text-xs uppercase tracking-wider">Especialidad en Geriatría</h4>
-                  <p class="font-sans text-xs text-slate-500 mt-0.5">Centro Médico Nacional (CMN) La Raza</p>
+                  <p class="font-sans text-xs text-slate-500 mt-0.5">CMN La Raza (Cédula Especialidad: 14022827)</p>
                 </div>
               </div>
             </div>
@@ -162,6 +185,83 @@
                   <p class="font-sans text-xs text-slate-500">{{ pilar.desc }}</p>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN MODALIDADES DE ATENCIÓN (Optimizado para SEO Local, AEO y GEO) -->
+    <section id="modalidades" class="py-16 bg-gradient-to-b from-white to-accent-warm/20 content-visibility-auto">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center max-w-3xl mx-auto mb-12 space-y-4">
+          <div class="inline-flex items-center gap-1.5 text-secondary-500 font-semibold uppercase tracking-widest text-xs">
+            <span class="w-2 h-2 rounded-full bg-secondary-500"></span>
+            <span>Cuidado Integral donde más lo necesitás</span>
+          </div>
+          <h2 class="text-3xl sm:text-4xl font-display font-bold text-slate-900">
+            Modalidades de <span class="text-primary">Atención Geriátrica</span>
+          </h2>
+          <p class="text-slate-600 font-sans text-base">
+            Adaptamos la consulta médica a la situación particular de cada adulto mayor, garantizando comodidad, seguridad y continuidad de su tratamiento.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Card 1: Consultorio -->
+          <div class="card flex flex-col justify-between p-8 bg-white border border-slate-100 rounded-3xl shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
+            <div class="space-y-4">
+              <div class="h-12 w-12 rounded-2xl bg-primary-50 border border-primary-100 flex items-center justify-center text-primary">
+                <Building class="w-6 h-6" />
+              </div>
+              <h3 class="font-display font-bold text-slate-800 text-xl">Consulta en Consultorio</h3>
+              <p class="text-sm text-slate-600 leading-relaxed font-sans">
+                Atención médica personalizada en nuestro consultorio ubicado en la zona médica de <strong>Delicias, Chihuahua</strong>. Espacio accesible, cómodo y adaptado para adultos mayores con movilidad reducida.
+              </p>
+            </div>
+            <div class="pt-6 border-t border-slate-50 mt-6">
+              <a href="#contacto" class="inline-flex items-center gap-1 text-sm font-semibold text-primary hover:text-primary-600">
+                <span>Agendar en Consultorio</span>
+                <ArrowRight class="w-4 h-4" />
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 2: Domicilio -->
+          <div class="card flex flex-col justify-between p-8 bg-white border border-slate-100 rounded-3xl shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
+            <div class="space-y-4">
+              <div class="h-12 w-12 rounded-2xl bg-secondary-50 border border-secondary-100 flex items-center justify-center text-secondary-500">
+                <Home class="w-6 h-6" />
+              </div>
+              <h3 class="font-display font-bold text-slate-800 text-xl">Consulta a Domicilio</h3>
+              <p class="text-sm text-slate-600 leading-relaxed font-sans">
+                Valoración geriátrica en la comodidad del hogar del paciente en <strong>Delicias y alrededores</strong>. Evitá traslados estresantes o riesgosos. Evaluamos al paciente en su entorno cotidiano para mejorar su calidad de vida.
+              </p>
+            </div>
+            <div class="pt-6 border-t border-slate-50 mt-6">
+              <a href="https://wa.me/526394651430?text=Hola%20Dra.%20Harsanyi,%20me%20gustar%C3%ADa%20agendar%20una%20consulta%20a%20domicilio" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 text-sm font-semibold text-secondary-500 hover:text-secondary-600">
+                <span>Solicitar Consulta a Domicilio</span>
+                <ArrowRight class="w-4 h-4" />
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 3: Hospital -->
+          <div class="card flex flex-col justify-between p-8 bg-white border border-slate-100 rounded-3xl shadow-sm hover:shadow-md transition-all duration-300 transform hover:-translate-y-1">
+            <div class="space-y-4">
+              <div class="h-12 w-12 rounded-2xl bg-accent-gold/10 border border-accent-gold/20 flex items-center justify-center text-accent-gold">
+                <Hospital class="w-6 h-6" />
+              </div>
+              <h3 class="font-display font-bold text-slate-800 text-xl">Atención Hospitalaria</h3>
+              <p class="text-sm text-slate-600 leading-relaxed font-sans">
+                Seguimiento integral para <strong>pacientes hospitalizados</strong> en centros médicos de Delicias. Colaboramos con cirujanos y especialistas para prevenir el delirio, la pérdida de funcionalidad y coordinar el alta segura.
+              </p>
+            </div>
+            <div class="pt-6 border-t border-slate-50 mt-6">
+              <a href="tel:+526394651430" class="inline-flex items-center gap-1 text-sm font-semibold text-slate-700 hover:text-slate-900">
+                <span>Llamar por Hospitalización</span>
+                <ArrowRight class="w-4 h-4" />
+              </a>
             </div>
           </div>
         </div>
@@ -208,7 +308,7 @@
               <p class="font-sans text-xs text-slate-600 leading-relaxed" v-html="service.description"></p>
             </div>
             <div class="pt-6 mt-auto">
-              <a :href="`https://wa.me/526391234567?text=Hola%20Dra.%20Harsanyi,%20deseo%20m%C3%A1s%20informaci%C3%B3n%20sobre:%20${encodeURIComponent(service.title)}`" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-primary hover:text-primary-600 hover:underline">
+              <a :href="`https://wa.me/526394651430?text=Hola%20Dra.%20Harsanyi,%20deseo%20m%C3%A1s%20informaci%C3%B3n%20sobre:%20${encodeURIComponent(service.title)}`" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1.5 text-xs font-semibold text-primary hover:text-primary-600 hover:underline">
                 <span>Solicitar detalles</span>
                 <ArrowRight class="w-3.5 h-3.5" />
               </a>
@@ -378,7 +478,7 @@
           </div>
           <div class="flex flex-col sm:flex-row items-center gap-4 shrink-0 relative z-10 w-full md:w-auto">
             <a 
-              href="https://wa.me/526391234567?text=Hola%20Dra.%20Harsanyi,%20me%20gustar%C3%ADa%20agendar%20una%20consulta"
+              href="https://wa.me/526394651430?text=Hola%20Dra.%20Harsanyi,%20me%20gustar%C3%ADa%20agendar%20una%20consulta"
               target="_blank"
               rel="noopener noreferrer"
               class="w-full sm:w-auto bg-secondary hover:bg-secondary-600 text-white font-bold py-3 px-6 rounded-xl text-xs sm:text-sm shadow-md transition-all duration-300 text-center inline-flex items-center justify-center gap-2"
@@ -427,7 +527,7 @@
                 Nuestro consultorio está a tu disposición para asesorarte y encontrar la mejor solución para tus seres queridos en menos de 5 minutos.
               </p>
               <a 
-                href="https://wa.me/526391234567?text=Hola%20Dra.%20Harsanyi,%20tengo%20una%20duda%20sobre%20la%20consulta%20geri%C3%A1trica%20en%20Delicias"
+                href="https://wa.me/526394651430?text=Hola%20Dra.%20Harsanyi,%20tengo%20una%20duda%20sobre%20la%20consulta%20geri%C3%A1trica%20en%20Delicias"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="inline-flex items-center justify-center gap-2 w-full bg-slate-900 hover:bg-slate-800 text-white font-semibold py-3.5 px-6 rounded-2xl text-xs shadow-md hover:shadow-lg transition-all duration-300"
@@ -469,7 +569,7 @@
                 leave-to-class="max-h-0 opacity-0"
               >
                 <div v-if="activeFaq === idx" class="overflow-hidden border-t border-slate-100">
-                  <div class="p-6 font-sans text-xs text-slate-600 leading-relaxed space-y-2" v-html="faq.answer">
+                  <div class="faq-answer p-6 font-sans text-xs text-slate-600 leading-relaxed space-y-2" v-html="faq.answer">
                   </div>
                 </div>
               </transition>
@@ -521,30 +621,30 @@
                   </div>
                   <div>
                     <h4 class="font-display font-semibold text-slate-800 text-xs">Dirección:</h4>
-                    <p class="font-sans text-xs text-slate-600 mt-0.5">Av. Agricultura Sur #100, Col. Centro, CP 33000, Delicias, Chihuahua, México</p>
-                  </div>
-                </div>
-                
-                <div class="flex items-start gap-4">
-                  <div class="h-10 w-10 rounded-xl bg-primary-50 border border-primary-100 flex items-center justify-center text-primary shrink-0">
-                    <Phone class="w-5 h-5" />
-                  </div>
-                  <div>
-                    <h4 class="font-display font-semibold text-slate-800 text-xs">Teléfono del Consultorio:</h4>
-                    <p class="font-sans text-xs text-slate-600 mt-0.5">
-                      <a href="tel:+526391234567" class="hover:text-primary transition-colors font-semibold">+52 639 123 4567</a>
-                    </p>
+                    <p class="font-sans text-xs text-slate-600 mt-0.5">Hospital Vistas del Sol, Consultorio 107. Av. 12a Sur y Calle Novena Sur S/N, Col. Centro, CP 33000, Cd. Delicias, Chihuahua, México</p>
                   </div>
                 </div>
 
                 <div class="flex items-start gap-4">
                   <div class="h-10 w-10 rounded-xl bg-primary-50 border border-primary-100 flex items-center justify-center text-primary shrink-0">
-                    <Mail class="w-5 h-5" />
+                    <Phone class="w-5 h-5" />
                   </div>
                   <div>
-                    <h4 class="font-display font-semibold text-slate-800 text-xs">Correo Electrónico:</h4>
+                    <h4 class="font-display font-semibold text-slate-800 text-xs">Teléfono del Consultorio y WhatsApp:</h4>
                     <p class="font-sans text-xs text-slate-600 mt-0.5">
-                      <a href="mailto:contacto@geriatradelicias.com" class="hover:text-primary transition-colors">contacto@geriatradelicias.com</a>
+                      <a href="tel:+526394651430" class="hover:text-primary transition-colors font-semibold">+52 639 465 1430</a>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start gap-4">
+                  <div class="h-10 w-10 rounded-xl bg-red-50 border border-red-100 flex items-center justify-center text-red-600 shrink-0">
+                    <Phone class="w-5 h-5" />
+                  </div>
+                  <div>
+                    <h4 class="font-display font-semibold text-slate-800 text-xs">Teléfono de Urgencias:</h4>
+                    <p class="font-sans text-xs text-red-600 mt-0.5">
+                      <a href="tel:+526141773799" class="hover:text-red-700 transition-colors font-semibold">+52 614 177 3799</a>
                     </p>
                   </div>
                 </div>
@@ -568,7 +668,7 @@
                 Pulsá el botón de abajo para enviar un mensaje directo a nuestro asistente de WhatsApp. Confirmamos tu horario disponible en minutos.
               </p>
               <a 
-                href="https://wa.me/526391234567?text=Hola%20Dra.%20Harsanyi,%20me%20gustar%C3%ADa%20agendar%20una%20consulta%20geri%C3%A1trica%20en%20Delicias"
+                href="https://wa.me/526394651430?text=Hola%20Dra.%20Harsanyi,%20me%20gustar%C3%ADa%20agendar%20una%20consulta%20geri%C3%A1trica%20en%20Delicias"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="inline-flex items-center justify-center gap-2.5 w-full bg-[#25D366] hover:bg-[#20ba5a] text-white font-bold py-3.5 px-6 rounded-xl text-sm shadow-md transition-all duration-300 transform hover:scale-[1.02]"
@@ -582,17 +682,75 @@
           <!-- Mapa Interactivo (Google Maps) -->
           <div class="lg:col-span-7">
             <div class="w-full h-[400px] lg:h-full min-h-[400px] rounded-3xl overflow-hidden shadow-lg border border-slate-200 relative bg-slate-100">
-              <!-- Google Maps Iframe para Delicias Chihuahua Centro -->
+              <!-- Google Maps Iframe para Hospital Vistas del Sol en Delicias -->
               <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m13!1d3501.996112708309!2d-105.4711!3d28.1933!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86ea2d6b38c23f85%3A0xf69c7333cf4456!2sDelicias%2C%20Chih.!5e0!3m2!1ses-419!2smx!4v1718819234856!5m2!1ses-419!2smx" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.4339893976865!2d-105.4773822247291!3d28.17993397591458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86eb1595868eb6a1%3A0x4b41628886f68d81!2sHOSPITAL%20VISTAS%20DEL%20SOL!5e0!3m2!1ses-419!2smx" 
                 class="absolute inset-0 w-full h-full border-0" 
+                style="filter: grayscale(0.4) sepia(0.15) hue-rotate(330deg) saturate(1.1) contrast(1.05);"
                 allowfullscreen="" 
                 loading="lazy" 
                 referrerpolicy="no-referrer-when-downgrade"
-                title="Mapa de ubicación del consultorio Dra. Andrea Carolina Harsanyi en Delicias, Chihuahua"
+                title="Mapa de ubicación del consultorio de la Dra. Andrea Carolina Harsanyi en el Hospital Vistas del Sol, Delicias, Chihuahua"
               ></iframe>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN CTA ADICIONAL CON SILUETA SOBREPUESTA -->
+    <section class="pt-24 pb-0 relative overflow-visible z-20 bg-gradient-to-b from-white to-accent-light">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <!-- Tarjeta Principal con overflow-visible -->
+        <div class="relative bg-gradient-to-br from-primary via-primary-800 to-primary-950 rounded-[2.5rem] shadow-premium px-8 pt-12 pb-0 md:py-16 md:px-12 lg:px-16 flex flex-col md:flex-row items-center justify-between gap-8 overflow-visible border border-white/10">
+          
+          <!-- Lado Izquierdo: Contenido SEO y Botón -->
+          <div class="w-full md:w-[45%] lg:w-[50%] space-y-6 text-center md:text-left relative z-10">
+            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-white/10 border border-white/20 text-xs font-semibold text-primary-200 uppercase tracking-wider">
+              Geriatría y Cuidado Integral
+            </span>
+            <h2 class="text-3xl sm:text-4xl font-display font-bold text-white leading-tight">
+              Mejorá la calidad de vida de tus seres queridos con atención geriátrica especializada
+            </h2>
+            <p class="text-sm sm:text-base text-primary-100/90 leading-relaxed font-sans">
+              La salud en la vejez requiere un enfoque integral y empático. Con la <strong>Dra. Andrea Carolina Harsanyi</strong>, especialista en geriatría en Delicias, Chihuahua, tus familiares recibirán una <strong>Valoración Geriátrica Integral</strong> para el diagnóstico oportuno de Alzheimer, demencias, osteoporosis y la prevención de caídas.
+            </p>
+            <div class="pt-2 flex flex-col sm:flex-row justify-center md:justify-start gap-4">
+              <a 
+                href="https://wa.me/526394651430?text=Hola%20Dra.%20Harsanyi,%20me%20gustar%C3%ADa%20agendar%20una%20consulta%20de%20valoracion%20geriatrica"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="inline-flex items-center justify-center gap-2 bg-secondary hover:bg-secondary-600 text-white font-bold px-6 py-3.5 rounded-xl text-sm shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-[1.03]"
+              >
+                <WhatsAppIcon class="w-5 h-5 text-white" />
+                <span>Agendar Cita de Valoración</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Lado Derecho: Espaciador en desktop para reservar el espacio, o la imagen en móvil -->
+          <div class="w-full md:w-[50%] lg:w-[45%] flex justify-center items-end">
+            <!-- En móvil, mostramos la imagen directamente dentro del flujo de la tarjeta; en desktop queda como espaciador -->
+            <NuxtImg 
+              src="/images/dra-carolina.webp" 
+              alt="Dra. Andrea Carolina Harsanyi - Geriatra en Delicias" 
+              class="h-64 sm:h-72 w-auto object-contain object-bottom filter drop-shadow-[0_10px_15px_rgba(0,0,0,0.2)] md:hidden"
+              format="webp"
+              loading="lazy"
+            />
+          </div>
+
+          <!-- Imagen Silueta Sobrepuesta (Desktop) -->
+          <div class="hidden md:block absolute bottom-0 -right-12 md:-right-16 lg:-right-24 xl:-right-28 h-[115%] lg:h-[125%] z-20 pointer-events-none">
+            <NuxtImg 
+              src="/images/dra-carolina.webp" 
+              alt="Dra. Andrea Carolina Harsanyi - Geriatra en Delicias" 
+              class="h-full w-auto object-contain object-bottom filter drop-shadow-[0_20px_25px_rgba(0,0,0,0.35)]"
+              format="webp"
+              loading="lazy"
+            />
+          </div>
+
         </div>
       </div>
     </section>
@@ -619,7 +777,10 @@ import {
   Activity,
   Quote,
   ChevronLeft,
-  ChevronRight
+  ChevronRight,
+  Home,
+  Building,
+  Hospital
 } from '@lucide/vue'
 
 const activeFaq = ref(null)
@@ -837,7 +998,7 @@ const faqs = [
   },
   {
     question: '¿Cuál es el costo de una consulta geriátrica en Delicias y cómo agendo?',
-    answer: 'El costo de la consulta de valoración inicial y de seguimiento es competitivo y accesible. Puede agendar cómodamente pulsando el botón flotante de <strong>WhatsApp</strong> en el sitio o comunicándose al teléfono <a href="tel:+526391234567" class="text-primary font-semibold hover:underline">+52 639 123 4567</a>. El asistente le proporcionará los horarios y detalles de costo.'
+    answer: 'El costo de la consulta de valoración inicial y de seguimiento es competitivo y accesible. Puede agendar cómodamente pulsando el botón flotante de <strong>WhatsApp</strong> en el sitio o comunicándose al teléfono <a href="tel:+526394651430" class="text-primary font-semibold hover:underline">+52 639 465 1430</a>. El asistente le proporcionará los horarios y detalles de costo.'
   },
   {
     question: '¿Qué enfermedades atiende un especialista en geriatría en Delicias Chihuahua?',
@@ -858,6 +1019,10 @@ const faqs = [
   {
     question: '¿Qué estudios o documentos se deben llevar a la primera consulta de valoración?',
     answer: 'Es fundamental traer todos los <strong>medicamentos y suplementos que el paciente toma actualmente</strong> (en físico o lista con dosis), estudios de laboratorio recientes (química sanguínea, exámenes de orina, etc.) y cualquier informe previo de otros especialistas. También es crucial que el paciente asista acompañado de un familiar o cuidador cercano que conozca a detalle su rutina diaria.'
+  },
+  {
+    question: '¿La Dra. Andrea Carolina Harsanyi atiende a pacientes hospitalizados en Delicias?',
+    answer: 'Sí, la Dra. Harsanyi ofrece servicio de interconsulta y seguimiento médico para <strong>pacientes adultos mayores hospitalizados</strong> en centros de salud de Delicias, Chihuahua. Trabajamos en estrecha colaboración con los médicos tratantes y cirujanos para prevenir complicaciones frecuentes de la internación en la tercera edad, como el síndrome confusional agudo (delirio), la pérdida acelerada de masa muscular y fuerza (sarcopenia) debido al reposo prolongado, y coordinamos una transición segura al momento del alta hacia su hogar.'
   }
 ]
 
@@ -874,7 +1039,8 @@ const schemaWebPage = {
     "@type": "SpeakableSpecification",
     "cssSelector": [
       "#inicio-titulo",
-      "#faq-seccion h3"
+      "#faq-seccion h3",
+      "#faq-seccion .faq-answer"
     ]
   }
 }
@@ -886,12 +1052,12 @@ const schemaPhysician = {
   "name": "Dra. Andrea Carolina Harsanyi",
   "image": "https://geriatradelicias.com/images/dra-harsanyi-hero.png",
   "url": "https://geriatradelicias.com",
-  "telephone": "+526391234567",
+  "telephone": "+526394651430",
   "medicalSpecialty": "Geriatrics",
   "priceRange": "$$",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "Av. Agricultura Sur #100, Col. Centro",
+    "streetAddress": "Hospital Vistas del Sol, Consultorio 107. Av. 12a Sur y Calle Novena Sur S/N, Col. Centro",
     "addressLocality": "Delicias",
     "addressRegion": "Chihuahua",
     "postalCode": "33000",
@@ -899,8 +1065,20 @@ const schemaPhysician = {
   },
   "geo": {
     "@type": "GeoCoordinates",
-    "latitude": "28.1933",
-    "longitude": "-105.4711"
+    "latitude": "28.1837",
+    "longitude": "-105.4746"
+  },
+  "hospitalAffiliation": {
+    "@type": "Hospital",
+    "name": "Hospital Vistas del Sol",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Av. 12a Sur y Calle Novena Sur S/N, Col. Centro",
+      "addressLocality": "Delicias",
+      "addressRegion": "Chihuahua",
+      "postalCode": "33000",
+      "addressCountry": "MX"
+    }
   },
   "openingHoursSpecification": [
     {
@@ -916,7 +1094,37 @@ const schemaPhysician = {
       "closes": "14:00"
     }
   ],
-  "certification": "Certificada por el Consejo Mexicano de Geriatría (Cédula de Especialidad: 12345678)"
+  "certification": "Médico General (Cédula Profesional: 12064045) | Especialidad en Geriatría (Cédula de Especialidad: 14022827), certificada por el Consejo Mexicano de Geriatría.",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Servicios Geriátricos",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "MedicalService",
+          "name": "Consulta geriátrica en consultorio",
+          "description": "Atención médica integral personalizada en consultorio totalmente adaptado y accesible para adultos mayores en Delicias, Chihuahua."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "MedicalService",
+          "name": "Consulta geriátrica a domicilio",
+          "description": "Valoración integral en el domicilio del paciente en Delicias y zonas aledañas, evitando riesgos de traslado y evaluando en su entorno habitual."
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "MedicalService",
+          "name": "Atención geriátrica intrahospitalaria",
+          "description": "Seguimiento médico intrahospitalario en centros médicos de Delicias para prevenir síndrome confusional agudo, polifarmacia y coordinar altas seguras."
+        }
+      }
+    ]
+  }
 }
 
 const schemaFAQPage = {
@@ -986,7 +1194,7 @@ const schemaHowTo = {
     {
       "@type": "HowToStep",
       "name": "Confirmar y Asistir",
-      "text": "Asistir a la valoración médica en Av. Agricultura Sur #100, Delicias, Chihuahua.",
+      "text": "Asistir a la valoración médica en Hospital Vistas del Sol, Consultorio 107, Cd. Delicias, Chihuahua.",
       "url": "https://geriatradelicias.com/#contacto"
     }
   ]

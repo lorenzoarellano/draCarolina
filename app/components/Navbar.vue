@@ -2,14 +2,15 @@
   <header class="fixed top-4 left-0 right-0 z-50 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
     <nav class="glass rounded-full px-6 py-3 flex items-center justify-between transition-all duration-300 shadow-premium border border-white/30 backdrop-blur-md">
       <!-- Logotipo -->
-      <a href="#inicio" class="flex items-center gap-2 group">
-        <div class="h-10 w-10 rounded-full bg-primary flex items-center justify-center text-white font-bold text-lg shadow-md group-hover:scale-105 transition-transform duration-300">
-          AH
-        </div>
-        <div class="flex flex-col">
-          <span class="font-display font-bold text-primary text-base leading-tight">Dra. Andrea Harsanyi</span>
-          <span class="font-sans text-xs text-secondary-500 uppercase tracking-widest leading-none font-semibold">Geriatra</span>
-        </div>
+      <a href="#inicio" class="flex items-center group">
+        <NuxtImg 
+          src="/logo.webp" 
+          alt="Dra. Andrea Harsanyi" 
+          width="180"
+          height="48"
+          class="h-10 sm:h-12 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+          format="webp"
+        />
       </a>
 
       <!-- Navegación Escritorio -->
@@ -27,7 +28,7 @@
       <!-- Botón de WhatsApp Escritorio -->
       <div class="hidden md:block">
         <a 
-          href="https://wa.me/526391234567?text=Hola%20Dra.%20Harsanyi,%20me%20gustar%C3%ADa%20agendar%20una%20consulta"
+          href="https://wa.me/526394651430?text=Hola%20Dra.%20Harsanyi,%20me%20gustar%C3%ADa%20agendar%20una%20consulta"
           target="_blank"
           rel="noopener noreferrer"
           class="inline-flex items-center gap-2 bg-primary text-white hover:bg-primary-600 px-5 py-2.5 rounded-full text-sm font-semibold shadow-md hover:shadow-lg transition-all duration-300 transform hover:scale-[1.03]"
@@ -71,7 +72,7 @@
           {{ link.label }}
         </a>
         <a 
-          href="https://wa.me/526391234567?text=Hola%20Dra.%20Harsanyi,%20me%20gustar%C3%ADa%20agendar%20una%20consulta"
+          href="https://wa.me/526394651430?text=Hola%20Dra.%20Harsanyi,%20me%20gustar%C3%ADa%20agendar%20una%20consulta"
           target="_blank"
           rel="noopener noreferrer"
           class="inline-flex items-center justify-center gap-2 bg-primary text-white hover:bg-primary-600 py-3 rounded-full text-base font-semibold shadow-md transition-all duration-300 w-full mt-2"

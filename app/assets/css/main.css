@@ -154,6 +154,62 @@
   animation: float-orb-3 20s ease-in-out infinite;
 }
 
+@keyframes float-portrait {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+.animate-float-portrait {
+  animation: float-portrait 6s ease-in-out infinite;
+  will-change: transform;
+}
+
+@keyframes float-slow {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(3deg);
+  }
+}
+
+@keyframes float-medium {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-14px) rotate(-3deg);
+  }
+}
+
+@keyframes float-fast {
+  0%, 100% {
+    transform: translateY(0) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-18px) rotate(4deg);
+  }
+}
+
+.animate-float-slow {
+  animation: float-slow 7s ease-in-out infinite;
+  will-change: transform;
+}
+
+.animate-float-medium {
+  animation: float-medium 5s ease-in-out infinite;
+  will-change: transform;
+}
+
+.animate-float-fast {
+  animation: float-fast 4s ease-in-out infinite;
+  will-change: transform;
+}
+
 .animate-fade-in-up {
   opacity: 0;
   animation: fade-in-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
@@ -192,7 +248,7 @@
 }
 
 .animate-text-glint-secondary {
-  background: linear-gradient(to right, #e03a35 0%, #e73630 35%, #ffffff 50%, #e73630 65%, #ff8578 100%);
+  background: linear-gradient(to right, #de4538 0%, #f1574a 35%, #ffffff 50%, #f1574a 65%, #f59584 100%);
   background-size: 200% auto;
   -webkit-background-clip: text;
   background-clip: text;

@@ -33,18 +33,18 @@ export default <Partial<Config>>{
           950: '#10283f'
         },
         secondary: {
-          DEFAULT: '#e73630',
-          50: '#fff5f4',
-          100: '#ffe8e6',
-          200: '#ffd5d1',
-          300: '#ffb5ad',
-          400: '#ff8578',
-          500: '#e73630', // Base Color (Acento/Coral)
-          600: '#e03a35',
-          700: '#bd2b27',
-          800: '#9c2420',
-          900: '#82221e',
-          950: '#470d0b'
+          DEFAULT: '#f1574a',
+          50: '#fef6f5',
+          100: '#fdece9',
+          200: '#fbdad3',
+          300: '#f8beb3',
+          400: '#f59584',
+          500: '#f1574a', // Base Color (Acento/Coral)
+          600: '#de4538',
+          700: '#ba3428',
+          800: '#9a2c22',
+          900: '#802820',
+          950: '#46110d'
         },
         // Paleta de toques femeninos y cálidos sugeridos
         accent: {

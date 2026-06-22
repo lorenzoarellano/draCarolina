@@ -67,8 +67,8 @@ export default defineNuxtConfig({
         // SEO Local & GEO (Posicionamiento en Delicias, Chihuahua)
         { name: 'geo.region', content: 'MX-CHH' },
         { name: 'geo.placename', content: 'Delicias' },
-        { name: 'geo.position', content: '28.1933;-105.4711' },
-        { name: 'ICBM', content: '28.1933, -105.4711' },
+        { name: 'geo.position', content: '28.1837;-105.4746' },
+        { name: 'ICBM', content: '28.1837, -105.4746' },
 
         // Open Graph / Facebook (Visualización Premium en Redes)
         { property: 'og:type', content: 'website' },
@@ -78,7 +78,7 @@ export default defineNuxtConfig({
           content: 'Atención médica gerontológica de alta calidad. Especialista en demencia, prevención de caídas y salud holística en el adulto mayor.'
         },
         { property: 'og:url', content: 'https://geriatradelicias.com' },
-        { property: 'og:image', content: 'https://geriatradelicias.com/images/social-share-cover.png' },
+        { property: 'og:image', content: 'https://geriatradelicias.com/images/social-share-cover.jpg' },
         { property: 'og:image:width', content: '1200' },
         { property: 'og:image:height', content: '630' },
 
@@ -89,14 +89,32 @@ export default defineNuxtConfig({
           name: 'twitter:description',
           content: 'Atención médica integral y empática para el adulto mayor en Delicias, Chihuahua.'
         },
-        { name: 'twitter:image', content: 'https://geriatradelicias.com/images/social-share-cover.png' }
+        { name: 'twitter:image', content: 'https://geriatradelicias.com/images/social-share-cover.jpg' }
       ],
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+        { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' },
+        { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/favicon-32x32.png' },
+        { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/favicon-16x16.png' },
+        { rel: 'manifest', href: '/site.webmanifest' },
         { rel: 'canonical', href: 'https://geriatradelicias.com' },
         // Preconexiones para mejorar el rendimiento
         { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
         { rel: 'preconnect', href: 'https://fonts.gstatic.com', crossorigin: 'anonymous' }
+      ],
+      script: [
+        {
+          src: 'https://www.googletagmanager.com/gtag/js?id=G-4D5XEQWKTH',
+          async: true
+        },
+        {
+          children: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-4D5XEQWKTH');
+          `
+        }
       ]
     }
   }

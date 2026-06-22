@@ -8,20 +8,21 @@
       <slot />
     </main>
 
-    <!-- Footer Corporativo -->
     <footer class="bg-slate-900 text-slate-300 font-sans border-t border-slate-800">
       <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 lg:py-16">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
           <!-- Columna 1: Branding -->
           <div class="space-y-4">
-            <div class="flex items-center gap-2">
-              <div class="h-10 w-10 rounded-full bg-primary flex items-center justify-center text-white font-bold text-lg">
-                AH
-              </div>
-              <div class="flex flex-col">
-                <span class="font-display font-bold text-white text-base leading-tight">Dra. Andrea Harsanyi</span>
-                <span class="text-xs text-primary-400 uppercase tracking-widest font-semibold">Geriatra</span>
-              </div>
+            <div class="flex items-center">
+              <NuxtImg 
+                src="/logo-footer.webp" 
+                alt="Dra. Andrea Harsanyi" 
+                width="160"
+                height="48"
+                class="h-12 w-auto object-contain"
+                format="webp"
+                loading="lazy"
+              />
             </div>
             <p class="text-sm text-slate-400 leading-relaxed">
               Atención médica gerontológica especializada, empática y con enfoque holístico para asegurar un envejecimiento pleno, saludable y digno en Delicias, Chihuahua.
@@ -71,15 +72,11 @@
             <h3 class="font-display font-bold text-white text-sm uppercase tracking-wider mb-4">Contacto</h3>
             <p class="text-sm text-slate-400 flex items-start gap-2">
               <MapPin class="w-5 h-5 text-secondary-500 shrink-0 mt-0.5" />
-              <span>Av. Agricultura Sur #100, Col. Centro, CP 33000, Delicias, Chihuahua, México</span>
+              <span>Hospital Vistas del Sol, Consultorio 107. Av. 12a Sur y Calle Novena Sur S/N, Col. Centro, CP 33000, Cd. Delicias, Chihuahua, México</span>
             </p>
             <p class="text-sm text-slate-400 flex items-center gap-2">
               <Phone class="w-5 h-5 text-secondary-500 shrink-0" />
-              <a href="tel:+526391234567" class="hover:text-primary-400 transition-colors">+52 639 123 4567</a>
-            </p>
-            <p class="text-sm text-slate-400 flex items-center gap-2">
-              <Mail class="w-5 h-5 text-secondary-500 shrink-0" />
-              <a href="mailto:contacto@geriatradelicias.com" class="hover:text-primary-400 transition-colors">contacto@geriatradelicias.com</a>
+              <a href="tel:+526394651430" class="hover:text-primary-400 transition-colors">+52 639 465 1430</a>
             </p>
           </div>
         </div>
@@ -87,7 +84,11 @@
         <hr class="border-slate-800 my-8" />
 
         <div class="flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
-          <p>&copy; {{ new Date().getFullYear() }} Dra. Andrea Carolina Harsanyi. Todos los derechos reservados.</p>
+          <div>
+            <p>&copy; {{ new Date().getFullYear() }} Dra. Andrea Carolina Harsanyi. Todos los derechos reservados.</p>
+            <p class="mt-1 text-slate-600">Cédula Médico General: 12064045 | Cédula Especialidad Geriatría: 14022827</p>
+            <p class="mt-1 text-slate-600">Designed by <a href="https://doctordigital.mx/" target="_blank" rel="noopener noreferrer" class="text-purple-400 hover:text-purple-300 font-medium transition-colors">DoctorDigital</a></p>
+          </div>
           <div class="flex gap-4">
             <a href="#" @click.prevent="isPrivacyOpen = true" class="hover:text-slate-400 underline">Aviso de Privacidad</a>
             <a href="#" @click.prevent="isTermsOpen = true" class="hover:text-slate-400 underline">Términos y Condiciones</a>
@@ -107,7 +108,7 @@
       <div class="space-y-4">
         <p class="font-semibold text-slate-800">Responsable de la protección de sus datos personales:</p>
         <p>
-          La Dra. Andrea Carolina Harsanyi, con domicilio en Av. Agricultura Sur #100, Col. Centro, Delicias, Chihuahua, México, es responsable de recabar sus datos personales, del uso que se le dé a los mismos y de su protección en estricto cumplimiento con la Ley Federal de Protección de Datos Personales en Posesión de los Particulares de México.
+          La Dra. Andrea Carolina Harsanyi, con domicilio en Hospital Vistas del Sol, Consultorio 107. Av. 12a Sur y Calle Novena Sur S/N, Col. Centro, Delicias, Chihuahua, México, es responsable de recabar sus datos personales, del uso que se le dé a los mismos y de su protección en estricto cumplimiento con la Ley Federal de Protección de Datos Personales en Posesión de los Particulares de México.
         </p>
         <p class="font-semibold text-slate-800">Finalidades del tratamiento de sus datos:</p>
         <p>
@@ -153,7 +154,7 @@
 
 <script setup>
 import { ref } from 'vue'
-import { MapPin, Phone, Mail } from '@lucide/vue'
+import { MapPin, Phone } from '@lucide/vue'
 import Navbar from '~/components/Navbar.vue'
 import WhatsAppCTA from '~/components/WhatsAppCTA.vue'
 import CookieBanner from '~/components/CookieBanner.vue'
